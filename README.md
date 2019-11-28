@@ -28,3 +28,13 @@ Coses que et maten (invisibles):
 Inspiration
 
 ![Screenshot](town.jpg)
+
+## Packages used
+
+* System Input
+* High Definition RP
+
+## Assets used
+
+* [Simple FP Controller (magicdidac)](https://magicdvstudio.com/assets/simpleFirstPersonController.unitypackage)
+* [Audio Manager (magicdidac)](https://magicdvstudio.com/assets/AudioManager_by_magicdidac.unitypackage)
