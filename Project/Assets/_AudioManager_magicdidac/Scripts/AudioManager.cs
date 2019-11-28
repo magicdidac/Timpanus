@@ -31,9 +31,7 @@ public class AudioManager : MonoBehaviour
         {
             sc.Instantiate();
         }
-
-        Play("Song-MainTheme");
-
+        
     }
 
     public void Play(string name)

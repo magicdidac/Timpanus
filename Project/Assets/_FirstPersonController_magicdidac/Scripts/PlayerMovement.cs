@@ -29,9 +29,9 @@ public class PlayerMovement
     private Vector2 moveInput;
 
 
-    public void Instantiate()
+    public void Initialize()
     {
-        controls = new InputMaster();
+        controls = GameController.instance.controls;
 
         controls.Player.Jump.started += _ => jumpInput = true;
         controls.Player.Jump.canceled += _ => jumpInput = false;
@@ -41,9 +41,7 @@ public class PlayerMovement
 
         controls.Player.Movement.performed += ctx => moveInput = ctx.ReadValue<Vector2>();
         controls.Player.Movement.canceled += _ => moveInput = Vector2.zero;
-
-        controls.Enable();
-
+        
     }
 
 
