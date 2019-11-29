@@ -6,7 +6,7 @@ using UnityEngine;
 public class Quest
 {
 
-    [HideInInspector] public int id { get; private set; }
+    [SerializeField] public int id;
     [HideInInspector] public bool isDone { get; private set; }
 
     [SerializeField] public string title;
@@ -16,24 +16,63 @@ public class Quest
 
     public void Initialize(int id)
     {
-        this.id = id;
         this.isDone = false;
+
+        Debug.Log("You: " + subQuests.Count);
 
         for(int i = 0; i < subQuests.Count; i++)
         {
-            subQuests[i].Initialize(i + 1);
+            subQuests[i].Initialize(this.id);
         }
 
     }
 
-    public void QuestDone()
+    private void QuestDone()
     {
         this.isDone = true;
     }
 
     public void SubQuestDone(int id)
     {
-        subQuests[id].Done();
+        GetSubquest(id).Done();
+        CheckIfDone();
+    }
+
+
+    private SubQuest GetSubquest(int id)
+    {
+        foreach (SubQuest s in subQuests)
+        {
+            if (s.id == id)
+            {
+                return s;
+            }
+        }
+
+        return null;
+    }
+
+
+    private void CheckIfDone()
+    {
+        foreach(SubQuest s in subQuests)
+        {
+            if (!s.isDone)
+                return;
+        }
+
+        isDone = true;
+
+    }
+
+    public bool isSubquestBeforeDone(int id)
+    {
+
+        if (id - 1 < 0)
+            return true;
+
+        return GetSubquest(id - 1).isDone;
+
     }
 
     public override string ToString()

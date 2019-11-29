@@ -40,7 +40,7 @@ public class UIGenerator : MonoBehaviour
 
                 RectTransform rectSubQuest = Instantiate(subQuestPrefab, transform.position, Quaternion.identity).GetComponent<RectTransform>();
                 rectSubQuest.SetParent(rectQuest);
-                rectSubQuest.anchoredPosition = new Vector2(0, rectQuest.anchoredPosition.y - (67.5f + (j * 135)));
+                rectSubQuest.anchoredPosition = new Vector2(0, -1 * (202.5f + (j * 135)));
                 rectSubQuest.GetComponent<UINoteLine>().subQuest = subQ;
             }
 

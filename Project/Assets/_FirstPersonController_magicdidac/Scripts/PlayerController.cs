@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
 
         controls = GameController.instance.controls;
 
-        controls.Player.Interact.started += _ => interactInput = true;
+        controls.Player.Interact.performed += _ => interactInput = true;
         controls.Player.Interact.canceled += _ => interactInput = false;
 
     }
@@ -37,7 +37,10 @@ public class PlayerController : MonoBehaviour
             RaycastHit interactableHit;
             if (raycasts.Check(5, interactableLayer, out interactableHit))
             {
-
+                if (interactableHit.transform.GetComponent<Interactable>())
+                {
+                    interactableHit.transform.GetComponent<Interactable>().Interact();
+                }
             }
         }
     }

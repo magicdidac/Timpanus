@@ -6,14 +6,17 @@ using UnityEngine;
 public class SubQuest
 {
 
-    [HideInInspector] public int id { get; private set; }
+    public int id;
+
+    [HideInInspector] public int parentQuestId { get; private set; }
+
     [HideInInspector] public bool isDone { get; private set; }
 
     [SerializeField] public string title;
 
-    public void Initialize(int id)
+    public void Initialize(int parentQuestId)
     {
-        this.id = id;
+        this.parentQuestId = parentQuestId;
         this.isDone = false;
     }
 

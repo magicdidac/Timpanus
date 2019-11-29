@@ -49,6 +49,14 @@ public class @InputMaster : IInputActionCollection, IDisposable
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Notes"",
+                    ""type"": ""Button"",
+                    ""id"": ""32338d9f-0b14-4bb7-9bb1-aef984ae7bb4"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -227,6 +235,28 @@ public class @InputMaster : IInputActionCollection, IDisposable
                     ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ee848d96-c916-44ab-9cfe-fb8ab6a51b2f"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard and mouse"",
+                    ""action"": ""Notes"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8cfc5a62-bbac-4985-bb2c-c1098bdb9302"",
+                    ""path"": ""<Gamepad>/select"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Notes"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -267,6 +297,7 @@ public class @InputMaster : IInputActionCollection, IDisposable
         m_Player_Run = m_Player.FindAction("Run", throwIfNotFound: true);
         m_Player_Movement = m_Player.FindAction("Movement", throwIfNotFound: true);
         m_Player_Interact = m_Player.FindAction("Interact", throwIfNotFound: true);
+        m_Player_Notes = m_Player.FindAction("Notes", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -320,6 +351,7 @@ public class @InputMaster : IInputActionCollection, IDisposable
     private readonly InputAction m_Player_Run;
     private readonly InputAction m_Player_Movement;
     private readonly InputAction m_Player_Interact;
+    private readonly InputAction m_Player_Notes;
     public struct PlayerActions
     {
         private @InputMaster m_Wrapper;
@@ -328,6 +360,7 @@ public class @InputMaster : IInputActionCollection, IDisposable
         public InputAction @Run => m_Wrapper.m_Player_Run;
         public InputAction @Movement => m_Wrapper.m_Player_Movement;
         public InputAction @Interact => m_Wrapper.m_Player_Interact;
+        public InputAction @Notes => m_Wrapper.m_Player_Notes;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -349,6 +382,9 @@ public class @InputMaster : IInputActionCollection, IDisposable
                 @Interact.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
                 @Interact.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
                 @Interact.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
+                @Notes.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnNotes;
+                @Notes.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnNotes;
+                @Notes.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnNotes;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -365,6 +401,9 @@ public class @InputMaster : IInputActionCollection, IDisposable
                 @Interact.started += instance.OnInteract;
                 @Interact.performed += instance.OnInteract;
                 @Interact.canceled += instance.OnInteract;
+                @Notes.started += instance.OnNotes;
+                @Notes.performed += instance.OnNotes;
+                @Notes.canceled += instance.OnNotes;
             }
         }
     }
@@ -393,5 +432,6 @@ public class @InputMaster : IInputActionCollection, IDisposable
         void OnRun(InputAction.CallbackContext context);
         void OnMovement(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
+        void OnNotes(InputAction.CallbackContext context);
     }
 }

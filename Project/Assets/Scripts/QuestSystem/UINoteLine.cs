@@ -37,6 +37,14 @@ public class UINoteLine : MonoBehaviour
             anim.SetBool("isDone", subQuest.isDone);
         else
             Debug.LogWarning("WTF are you doing man!\nThis line doesnt have a quest or subquest assigned!", gameObject);
+
+        if (subQuest.title != "")
+        {
+            if (GameController.instance.GetQuest(subQuest.parentQuestId).isSubquestBeforeDone(subQuest.id))
+            {
+                anim.SetBool("isVanished", false);
+            }
+        }
     }
 
 }

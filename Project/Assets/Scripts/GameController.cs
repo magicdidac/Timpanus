@@ -30,28 +30,35 @@ public class GameController : MonoBehaviour
 
     }
 
-    public void QuestDone(int id)
-    {
-        foreach(Quest q in quests)
-        {
-            if(q.id == id)
-            {
-                q.QuestDone();
-                return;
-            }
-        }
-    }
-
     public void SubquestDone(int questId, int subquestId)
     {
         foreach (Quest q in quests)
         {
             if(q.id == questId)
-            {
+            {          
                 q.SubQuestDone(subquestId);
                 return;
             }
         }
+    }
+
+    public bool IsDone(int questId, int subquestId)
+    {
+        foreach(Quest q in quests)
+        {
+            if(q.id == questId)
+            {
+                foreach(SubQuest s in q.subQuests)
+                {
+                    if(s.id == subquestId)
+                    {
+                        return s.isDone;
+                    }
+                }
+            }
+        }
+
+        return false;
     }
 
     public PlayerController GetPlayer()
@@ -60,6 +67,19 @@ public class GameController : MonoBehaviour
             player = GameObject.FindObjectOfType<PlayerController>();
 
         return player;
+    }
+
+    public Quest GetQuest(int id)
+    {
+        foreach(Quest q in quests)
+        {
+            if(q.id == id)
+            {
+                return q;
+            }
+        }
+
+        return null;
     }
 
 }

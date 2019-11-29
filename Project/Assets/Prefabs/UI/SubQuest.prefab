@@ -153,9 +153,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quest:
+    id: 0
     title: 
     subQuests: []
   subQuest:
+    id: 0
     title: 
   title: {fileID: 2611050135398186035}
 --- !u!1 &2611050135398186033
