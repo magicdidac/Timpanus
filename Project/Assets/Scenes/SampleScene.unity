@@ -15378,6 +15378,7 @@ MonoBehaviour:
   SpeedParameterName: Speed Switch
   JumpOrLandParameterName: Jump or Land
   StepDistance: 4
+  GroundCheckDistance: 2
   RayDistance: 1.2
   StartRunningTime: 0.3
   JumpInputName: Jump
