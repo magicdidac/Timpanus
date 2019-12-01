@@ -1,6 +1,22 @@
 # Timpanus
 A TimpanusTeam Game
 
+Sonidos importantes:
+
+-ambiental (para distraer/difuminar los sonidos)
+-musica radio
+-juguete de perro
+-señor enfadado hablando (no se entienda)
+-perro ladrando
+-loop perro respirando
+-loop vecino calmado
+-pasos
+-fuego loop
+-extintor
+-coger llave
+-llaves moviendose por el viento
+-abrir puerta
+-coche loop
 Elements mapa:
 
  - casa -> meva casa amb jardi (devant darrere)
