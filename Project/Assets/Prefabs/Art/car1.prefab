@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 1209698811058448930}
   - component: {fileID: 5869001765308388063}
   - component: {fileID: 7019274951424650079}
+  - component: {fileID: 2367198156452703443}
   m_Layer: 0
   m_Name: car1
   m_TagString: Untagged
@@ -109,3 +110,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &2367198156452703443
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3908150300813574893}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 7140782875219843965, guid: 8a80176eae55fc14096164e6109669ad, type: 3}
