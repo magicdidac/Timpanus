@@ -367,6 +367,7 @@ GameObject:
   - component: {fileID: 7150921456796326895}
   - component: {fileID: 5432161140584743436}
   - component: {fileID: 4534040450773858611}
+  - component: {fileID: 3226549925527194601}
   m_Layer: 0
   m_Name: windowFrames
   m_TagString: Untagged
@@ -434,6 +435,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &3226549925527194601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5401696686747613580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebea15d6bd5261248bf95eedc8aeb967, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaterialValue: 4
 --- !u!1 &6219213911681565734
 GameObject:
   m_ObjectHideFlags: 0
@@ -715,6 +729,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6347699763388606132}
+  - component: {fileID: 2294004574136263377}
   m_Layer: 0
   m_Name: doorPivot
   m_TagString: Untagged
@@ -737,6 +752,19 @@ Transform:
   m_Father: {fileID: 2120416433408154497}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2294004574136263377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6347699763388606133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebea15d6bd5261248bf95eedc8aeb967, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaterialValue: 0
 --- !u!1 &6347699764001457871
 GameObject:
   m_ObjectHideFlags: 0
@@ -1408,6 +1436,7 @@ GameObject:
   - component: {fileID: 5686581790787246651}
   - component: {fileID: 6098756318771021509}
   - component: {fileID: 655460666142286355}
+  - component: {fileID: 3091630200590847254}
   m_Layer: 0
   m_Name: stairs
   m_TagString: Untagged
@@ -1475,6 +1504,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &3091630200590847254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7981033198455077809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebea15d6bd5261248bf95eedc8aeb967, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaterialValue: 4
 --- !u!1 &8277236340138326359
 GameObject:
   m_ObjectHideFlags: 0
@@ -1564,6 +1606,7 @@ GameObject:
   - component: {fileID: 7384355298694900354}
   - component: {fileID: 5581466098788954817}
   - component: {fileID: 3482345689129047649}
+  - component: {fileID: 6458232354274612518}
   m_Layer: 0
   m_Name: floor
   m_TagString: Untagged
@@ -1631,3 +1674,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &6458232354274612518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9045476135385159362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebea15d6bd5261248bf95eedc8aeb967, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaterialValue: 4
