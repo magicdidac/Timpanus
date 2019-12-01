@@ -15,7 +15,6 @@ public class FMODStudioFirstPersonFootsteps : MonoBehaviour
     [SerializeField] private string JumpOrLandParameterName;                    // Use this in the Editor to write the name of the parameter that contorls whether or not a jumping or a landing sound needs to be heard.
     [Header("Playback Settings")]
     [SerializeField] private float StepDistance = 2.0f;                         // Select how far the player must travel before they hear a footstep. This will then remain a constant and will not change.
-    [SerializeField] private float GroundCheckDistance;                         //We'll use this to set a min distance to "fall" to see if we're grounded
     [SerializeField] private float RayDistance = 1.2f;                          // Select how far the raycast will travel down to when checking for a floor. This will then remain a constant and will not change.
     [SerializeField] private float StartRunningTime = 0.3f;                     // Set a tmie. If the time between each step the player takes is less than this value, the player will start to hear running footsteps. This will then remain a constant and will not change.
     [SerializeField] private string JumpInputName;                              // In Unity, go Edit -> Project Settings -> Input Manager. Then find the name of the input that controls which key/button the player must press in order to jump (it's proably called "Jump"). Then once you know it's name, write it into this variable in the Inspector tab. This will then remain a constant and will not change.
@@ -113,8 +112,10 @@ public class FMODStudioFirstPersonFootsteps : MonoBehaviour
         Physics.Raycast(transform.position, Vector3.down, out hit, RayDistance);    // First, a raycast is fired from the location of the player, downwards towards the ground. It travels for as far as we set the 'RayDistance' variable to in UNity's Inspector and then stores information about whatever it comes into contact with inside the 'hit' variable. 
         if (hit.collider)                                                           // If that raycast find's a collider component at all...
             PlayerTouchingGround = true;                                            // ...we set the 'PlayerTouchingGround' variable to true, as this means the player must be standing on something.
-        else  if(Vector3.Distance(hit.point,transform.position)> GroundCheckDistance)                                                                      // Else if however, there is no collider component...
+        else                                                                   // Else if however, there is no collider component...
             PlayerTouchingGround = false;                                           // ...we set the 'PlayerTouchingGround' variable to false, as this means that nothing is colliding with the bottom of the capsule that is our players character, and therfore, the player is in the air.
+    
+     
     }
 
 
