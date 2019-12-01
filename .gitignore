@@ -42,17 +42,3 @@ Thumbs.db
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
-Project/Assets/StreamingAssets/Master Bank.bank.meta
-Project/Assets/StreamingAssets/Master Bank.strings.bank
-Project/Assets/StreamingAssets/Master Bank.strings.bank.meta
-Project/fmod_editor.log
-Project/.idea/.idea.Project/.idea/workspace.xml
-Project/Assets/Plugins.meta
-Project/Assets/StreamingAssets.meta
-Project/Assets/Plugins/FMOD.meta
-Project/Assets/Plugins/FMOD/lib.meta
-Project/Assets/Plugins/FMOD/lib/win.meta
-Project/Assets/Plugins/FMOD/lib/win/x86_64.meta
-Project/Assets/Plugins/FMOD/lib/win/x86_64/fmodstudiol.dll
-Project/Assets/Plugins/FMOD/lib/win/x86_64/fmodstudiol.dll.meta
-Project/Assets/StreamingAssets/Master Bank.bank
