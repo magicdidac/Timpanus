@@ -496,6 +496,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 55667873}
+  - component: {fileID: 55667874}
   m_Layer: 0
   m_Name: fencesHouse3
   m_TagString: Untagged
@@ -549,6 +550,19 @@ Transform:
   m_Father: {fileID: 4562730238267669544}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &55667874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55667872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebea15d6bd5261248bf95eedc8aeb967, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaterialValue: 4
 --- !u!1001 &65240014
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1175,6 +1189,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 150014940}
+  - component: {fileID: 150014941}
   m_Layer: 0
   m_Name: trunks
   m_TagString: Untagged
@@ -1212,6 +1227,19 @@ Transform:
   m_Father: {fileID: 4562730238267669544}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &150014941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150014939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebea15d6bd5261248bf95eedc8aeb967, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaterialValue: 4
 --- !u!1001 &150425294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3519,6 +3547,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 475261807}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &481818079 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5401696686747613580, guid: 2459c616ac1d0a643bd30626b5920ffc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1792335384}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &481818081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481818079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebea15d6bd5261248bf95eedc8aeb967, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaterialValue: 4
 --- !u!1001 &488668021
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3678,6 +3725,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 531202996}
+  - component: {fileID: 531202997}
   m_Layer: 0
   m_Name: rocks
   m_TagString: Untagged
@@ -3705,6 +3753,19 @@ Transform:
   m_Father: {fileID: 4562730238267669544}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &531202997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531202995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebea15d6bd5261248bf95eedc8aeb967, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaterialValue: 1
 --- !u!1001 &546846782
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4054,6 +4115,7 @@ GameObject:
   - component: {fileID: 600854294}
   - component: {fileID: 600854293}
   - component: {fileID: 600854292}
+  - component: {fileID: 600854295}
   m_Layer: 0
   m_Name: Garden01
   m_TagString: Untagged
@@ -4134,6 +4196,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 600854290}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &600854295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600854290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebea15d6bd5261248bf95eedc8aeb967, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaterialValue: 2
 --- !u!1 &611772504
 GameObject:
   m_ObjectHideFlags: 0
@@ -4405,6 +4480,7 @@ GameObject:
   - component: {fileID: 648458796}
   - component: {fileID: 648458795}
   - component: {fileID: 648458794}
+  - component: {fileID: 648458797}
   m_Layer: 0
   m_Name: road
   m_TagString: Untagged
@@ -4485,6 +4561,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 648458792}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &648458797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648458792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebea15d6bd5261248bf95eedc8aeb967, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaterialValue: 1
 --- !u!1001 &653579363
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5288,6 +5377,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 718394407}
+  - component: {fileID: 718394408}
   m_Layer: 0
   m_Name: fencesHouse2
   m_TagString: Untagged
@@ -5341,6 +5431,19 @@ Transform:
   m_Father: {fileID: 4562730238267669544}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &718394408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718394406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebea15d6bd5261248bf95eedc8aeb967, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaterialValue: 4
 --- !u!1 &734202585
 GameObject:
   m_ObjectHideFlags: 0
@@ -5950,6 +6053,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 805934561}
+  - component: {fileID: 805934562}
   m_Layer: 0
   m_Name: fencesHouse4
   m_TagString: Untagged
@@ -6003,6 +6107,19 @@ Transform:
   m_Father: {fileID: 4562730238267669544}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &805934562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805934560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebea15d6bd5261248bf95eedc8aeb967, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaterialValue: 4
 --- !u!1001 &820462378
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7043,6 +7160,25 @@ Transform:
   m_Father: {fileID: 4562730238267669544}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &912459487 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9045476135385159362, guid: 2459c616ac1d0a643bd30626b5920ffc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1792335384}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &912459489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912459487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebea15d6bd5261248bf95eedc8aeb967, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaterialValue: 4
 --- !u!1001 &913080784
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7588,6 +7724,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1000575178}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1051765165 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7981033198455077809, guid: 2459c616ac1d0a643bd30626b5920ffc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1792335384}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1051765167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051765165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebea15d6bd5261248bf95eedc8aeb967, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaterialValue: 4
 --- !u!1001 &1070035244
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7813,6 +7968,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1085186936}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1087048939 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6347699763388606133, guid: 2459c616ac1d0a643bd30626b5920ffc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1792335384}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1087048941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087048939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebea15d6bd5261248bf95eedc8aeb967, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaterialValue: 4
 --- !u!1001 &1095788410
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11034,6 +11208,7 @@ GameObject:
   - component: {fileID: 1528930491}
   - component: {fileID: 1528930490}
   - component: {fileID: 1528930489}
+  - component: {fileID: 1528930492}
   m_Layer: 0
   m_Name: Garden02
   m_TagString: Untagged
@@ -11114,6 +11289,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1528930487}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1528930492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528930487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebea15d6bd5261248bf95eedc8aeb967, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaterialValue: 2
 --- !u!1001 &1533841716
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13381,6 +13569,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1797323344}
+  - component: {fileID: 1797323345}
   m_Layer: 0
   m_Name: trees
   m_TagString: Untagged
@@ -13424,6 +13613,19 @@ Transform:
   m_Father: {fileID: 4562730238267669544}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1797323345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797323343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebea15d6bd5261248bf95eedc8aeb967, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaterialValue: 4
 --- !u!1001 &1803392805
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13508,6 +13710,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1851572873}
+  - component: {fileID: 1851572874}
   m_Layer: 0
   m_Name: fencesHouse1
   m_TagString: Untagged
@@ -13561,6 +13764,19 @@ Transform:
   m_Father: {fileID: 4562730238267669544}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1851572874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851572872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebea15d6bd5261248bf95eedc8aeb967, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaterialValue: 4
 --- !u!1001 &1869291290
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15138,6 +15354,53 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e2c8d8841954f644bc23d5fbce4e170, type: 3}
+--- !u!1 &2114014808 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4790891074056876411, guid: 6e2c8d8841954f644bc23d5fbce4e170,
+    type: 3}
+  m_PrefabInstance: {fileID: 2114014807}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2114014809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114014808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceed41807a7268e4580879e7638e97ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FootstepsEventPath: event:/Footstep
+  JumpingEventPath: event:/Jump & Land
+  MaterialParameterName: Material
+  SpeedParameterName: Speed Switch
+  JumpOrLandParameterName: Jump or Land
+  StepDistance: 4
+  RayDistance: 1.2
+  StartRunningTime: 0.3
+  JumpInputName: Jump
+  MaterialTypes:
+  - Earth
+  - Stone
+  - Grass
+  - Puddle
+  - Wood
+  DefulatMaterialValue: 1
+--- !u!114 &2114014810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114014808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListenerNumber: -1
 --- !u!1001 &2117799457
 PrefabInstance:
   m_ObjectHideFlags: 0
