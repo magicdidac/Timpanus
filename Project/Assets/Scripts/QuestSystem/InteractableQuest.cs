@@ -5,6 +5,7 @@ using UnityEngine;
 public class InteractableQuest : Interactable
 {
     [SerializeField] public List<ParentQuestAndSubquest> myQuests = new List<ParentQuestAndSubquest>();
+    [SerializeField] private List<Transform> points = new List<Transform>();
     [HideInInspector] protected Animator anim;
     [HideInInspector] protected GameController gc;
 
@@ -12,6 +13,13 @@ public class InteractableQuest : Interactable
     {
         gc = GameController.instance;
         anim = GetComponent<Animator>();
+
+        points.Add(transform);
+
+        Transform point = points[Random.Range(0, points.Count)];
+
+        transform.position = point.position;
+        transform.forward = point.forward;
 
     }
 

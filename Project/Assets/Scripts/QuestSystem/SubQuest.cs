@@ -26,6 +26,7 @@ public class SubQuest
 
     public void Done()
     {
+        GameController.instance.audioManager.Play("Pencil");
         this.isDone = true;
     }
 
