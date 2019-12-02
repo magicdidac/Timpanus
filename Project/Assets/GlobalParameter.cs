@@ -14,14 +14,14 @@ public class GlobalParameter : MonoBehaviour
     {
         instance = FMODUnity.RuntimeManager.CreateInstance(fmodEvent);
         instance.start();
-        
+       // FMODUnity.RuntimeManager.AttachInstanceToGameObject(instance, transform, GetComponent<Rigidbody>());
     }
 
     public static void AddAchievement()
     {
         instance.getParameterByName("Achievement", out last);
 
-        instance.setParameterByName("Achievement", last+.2f);
+        Debug.Log(instance.setParameterByName("Achievement", last+.3f));instance.setParameterByName("Achievement", last+.3f);
         Debug.Log(last);
     }
 }

@@ -27,9 +27,6 @@ public class SubQuest
     public void Done()
     {
         this.isDone = true;
-        GlobalParameter.AddAchievement();
-
-
     }
 
     public override string ToString()
