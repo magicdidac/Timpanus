@@ -45,4 +45,18 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Car")
+        {
+            GameController.instance.Die();
+        }
+    }
+
+    public void Die()
+    {
+        Debug.Log("Die");
+    }
+
 }

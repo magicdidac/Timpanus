@@ -11,6 +11,10 @@ public class UIController : MonoBehaviour
     [HideInInspector] private InputMaster controls;
     [HideInInspector] private bool notesInput;
 
+    [SerializeField] private GameObject tip = null;
+    [SerializeField] private GameObject notes = null;
+    [SerializeField] private GameObject deathMenu = null;
+
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -18,6 +22,10 @@ public class UIController : MonoBehaviour
 
         controls.Player.Notes.performed += _ => notesInput = true;
         controls.Player.Notes.canceled += _ => notesInput = false;
+
+        tip.SetActive(true);
+        notes.SetActive(true);
+        deathMenu.SetActive(false);
 
     }
 
@@ -31,6 +39,13 @@ public class UIController : MonoBehaviour
             anim.SetTrigger("Change");
 
         }
+    }
+
+    public void Die()
+    {
+        tip.SetActive(false);
+        notes.SetActive(false);
+        deathMenu.SetActive(true);
     }
 
 }

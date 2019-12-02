@@ -1,14 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
     [HideInInspector] public static GameController instance;
 
+    [SerializeField] private UIController uiController = null;
+    [SerializeField] private PlayerController player;
+    [Space]
     [SerializeField] public List<Quest> quests = new List<Quest>();
 
-    private PlayerController player;
+
 
     [HideInInspector] public InputMaster controls;
 
@@ -21,7 +25,6 @@ public class GameController : MonoBehaviour
         }
 
         instance = this;
-        DontDestroyOnLoad(gameObject);
 
         controls = new InputMaster();
         controls.Enable();
@@ -99,6 +102,20 @@ public class GameController : MonoBehaviour
 
         return s.isDone;
 
+    }
+
+    public void Die()
+    {
+        uiController.Die();
+        player.Die();
+        Cursor.lockState = CursorLockMode.None;
+        Time.timeScale = 0;
+    }
+
+    public void RestartScene()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadSceneAsync(0);
     }
 
 }
