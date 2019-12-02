@@ -196,78 +196,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 305609}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1494706
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1494707}
-  - component: {fileID: 1494709}
-  - component: {fileID: 1494708}
-  m_Layer: 0
-  m_Name: Afueras (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1494707
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1494706}
-  m_LocalRotation: {x: -0, y: -0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.317, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1256371649}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &1494708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1494706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 744a208c85da6d04c861d81b992e4ead, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: Player
-  Emitters:
-  - Target: {fileID: 2114014814}
-    Params:
-    - Name: MelodyIn
-      Value: 1
-    - Name: BassAndDrummerIn
-      Value: 0
-    - Name: ShakerIn
-      Value: 0
-    - Name: OrganIn
-      Value: 0
-    - Name: GuitarIn
-      Value: 0
-  TriggerEvent: 3
---- !u!65 &1494709
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1494706}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2356875
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1271,78 +1199,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 143262137}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &149249893
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 149249894}
-  - component: {fileID: 149249896}
-  - component: {fileID: 149249895}
-  m_Layer: 0
-  m_Name: Afueras (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &149249894
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 149249893}
-  m_LocalRotation: {x: -0, y: -0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.035, y: 0, z: -0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1256371649}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &149249895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 149249893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 744a208c85da6d04c861d81b992e4ead, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: Player
-  Emitters:
-  - Target: {fileID: 2114014814}
-    Params:
-    - Name: MelodyIn
-      Value: 1
-    - Name: BassAndDrummerIn
-      Value: 0
-    - Name: ShakerIn
-      Value: 0
-    - Name: OrganIn
-      Value: 0
-    - Name: GuitarIn
-      Value: 0
-  TriggerEvent: 3
---- !u!65 &149249896
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 149249893}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &150014939
 GameObject:
   m_ObjectHideFlags: 0
@@ -2699,6 +2555,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f90b6ede633b78b4cb0ea0204b7c3786, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tip: {fileID: 0}
+  notes: {fileID: 0}
+  deathMenu: {fileID: 0}
 --- !u!1001 &361967262
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2924,78 +2783,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 395216921}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &407267951
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 407267952}
-  - component: {fileID: 407267954}
-  - component: {fileID: 407267953}
-  m_Layer: 0
-  m_Name: Afueras (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &407267952
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 407267951}
-  m_LocalRotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2.165, y: 0, z: 0.4413}
-  m_LocalScale: {x: 0.15890837, y: 1, z: 4.453597}
-  m_Children: []
-  m_Father: {fileID: 1256371649}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &407267953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 407267951}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 744a208c85da6d04c861d81b992e4ead, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: Player
-  Emitters:
-  - Target: {fileID: 2114014814}
-    Params:
-    - Name: MelodyIn
-      Value: 1
-    - Name: BassAndDrummerIn
-      Value: 0
-    - Name: ShakerIn
-      Value: 0
-    - Name: OrganIn
-      Value: 0
-    - Name: GuitarIn
-      Value: 0
-  TriggerEvent: 3
---- !u!65 &407267954
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 407267951}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &414754977
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3215,78 +3002,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 467024ff5ae0d574d9017880fb1a12a2, type: 3}
---- !u!1 &429070381
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 429070382}
-  - component: {fileID: 429070384}
-  - component: {fileID: 429070383}
-  m_Layer: 0
-  m_Name: JardinesSinEntrar (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &429070382
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 429070381}
-  m_LocalRotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2.165, y: 0, z: 0.0589}
-  m_LocalScale: {x: 0.05480723, y: 1, z: 3.0769274}
-  m_Children: []
-  m_Father: {fileID: 1256371649}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &429070383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 429070381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 744a208c85da6d04c861d81b992e4ead, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: Player
-  Emitters:
-  - Target: {fileID: 2114014814}
-    Params:
-    - Name: GuitarIn
-      Value: 0
-    - Name: OrganIn
-      Value: 1
-    - Name: ShakerIn
-      Value: 1
-    - Name: BassAndDrummerIn
-      Value: 1
-    - Name: MelodyIn
-      Value: 0
-  TriggerEvent: 3
---- !u!65 &429070384
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 429070381}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &444715656
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6427,76 +6142,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 798351755}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &804123946
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 804123947}
-  - component: {fileID: 804123949}
-  - component: {fileID: 804123948}
-  m_Layer: 0
-  m_Name: Casa
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &804123947
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 804123946}
-  m_LocalRotation: {x: -0, y: -0.6988041, z: -0, w: 0.71531314}
-  m_LocalPosition: {x: 3.083, y: 0, z: -0.312}
-  m_LocalScale: {x: 0.117198385, y: 1, z: 1.0203384}
-  m_Children: []
-  m_Father: {fileID: 1256371649}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: -88.662, z: 0}
---- !u!114 &804123948
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 804123946}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 744a208c85da6d04c861d81b992e4ead, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: Player
-  Emitters:
-  - Target: {fileID: 2114014814}
-    Params:
-    - Name: ShakerIn
-      Value: 1
-    - Name: OrganIn
-      Value: 1
-    - Name: GuitarIn
-      Value: 1
-    - Name: MelodyIn
-      Value: 0
-  TriggerEvent: 3
---- !u!65 &804123949
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 804123946}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &805934560
 GameObject:
   m_ObjectHideFlags: 0
@@ -9723,46 +9368,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1254548364}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1256371648
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1256371649}
-  m_Layer: 0
-  m_Name: FMOD Music Triggers
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1256371649
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1256371648}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 5.4, y: 6.7, z: 45.5}
-  m_LocalScale: {x: 21.106592, y: 16.139, z: 132.82239}
-  m_Children:
-  - {fileID: 1427026582}
-  - {fileID: 1888848707}
-  - {fileID: 407267952}
-  - {fileID: 1494707}
-  - {fileID: 149249894}
-  - {fileID: 1495539198}
-  - {fileID: 429070382}
-  - {fileID: 1882241888}
-  - {fileID: 2064061145}
-  - {fileID: 804123947}
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1256960784
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10903,6 +10508,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9018d149f2cff284d8d2a263f3b6d812, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uiController: {fileID: 0}
+  audioManager: {fileID: 0}
+  player: {fileID: 0}
   quests:
   - id: 0
     title: The neighbour
@@ -10922,76 +10530,6 @@ MonoBehaviour:
       title: Find the dog toy
     - id: 2
       title: Give the toy to the dog
---- !u!1 &1427026579
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1427026582}
-  - component: {fileID: 1427026581}
-  - component: {fileID: 1427026580}
-  m_Layer: 0
-  m_Name: CallePrincipalATOPEE
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1427026580
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1427026579}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 744a208c85da6d04c861d81b992e4ead, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: Player
-  Emitters:
-  - Target: {fileID: 2114014814}
-    Params:
-    - Name: GuitarIn
-      Value: 0
-    - Name: ShakerIn
-      Value: 1
-    - Name: BassAndDrummerIn
-      Value: 1
-    - Name: MelodyIn
-      Value: 1
-  TriggerEvent: 3
---- !u!65 &1427026581
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1427026579}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!4 &1427026582
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1427026579}
-  m_LocalRotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2.1652005, y: 0, z: -0.044043764}
-  m_LocalScale: {x: 0.15890837, y: 1, z: 4.453597}
-  m_Children: []
-  m_Father: {fileID: 1256371649}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1432895420
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11459,78 +10997,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1482801393}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1495539197
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1495539198}
-  - component: {fileID: 1495539200}
-  - component: {fileID: 1495539199}
-  m_Layer: 0
-  m_Name: JardinesSinEntrar
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1495539198
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1495539197}
-  m_LocalRotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2.165, y: 0, z: -0.1598}
-  m_LocalScale: {x: 0.07124021, y: 1, z: 3.0769274}
-  m_Children: []
-  m_Father: {fileID: 1256371649}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1495539199
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1495539197}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 744a208c85da6d04c861d81b992e4ead, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: Player
-  Emitters:
-  - Target: {fileID: 2114014814}
-    Params:
-    - Name: GuitarIn
-      Value: 0
-    - Name: OrganIn
-      Value: 1
-    - Name: ShakerIn
-      Value: 1
-    - Name: BassAndDrummerIn
-      Value: 1
-    - Name: MelodyIn
-      Value: 0
-  TriggerEvent: 3
---- !u!65 &1495539200
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1495539197}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1499524567
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13050,7 +12516,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: 168d3f7eb653b5d4b96cbabeccd35f2d, type: 2}
+  sharedProfile: {fileID: 0}
 --- !u!4 &1676149549
 Transform:
   m_ObjectHideFlags: 0
@@ -14562,150 +14028,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1870709669}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1882241887
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1882241888}
-  - component: {fileID: 1882241890}
-  - component: {fileID: 1882241889}
-  m_Layer: 0
-  m_Name: JardinesBack
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1882241888
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1882241887}
-  m_LocalRotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2.16, y: 0, z: -0.404}
-  m_LocalScale: {x: 0.05480723, y: 1, z: 3.0769274}
-  m_Children: []
-  m_Father: {fileID: 1256371649}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1882241889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1882241887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 744a208c85da6d04c861d81b992e4ead, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: Player
-  Emitters:
-  - Target: {fileID: 2114014814}
-    Params:
-    - Name: ShakerIn
-      Value: 0
-    - Name: OrganIn
-      Value: 0
-    - Name: GuitarIn
-      Value: 1
-    - Name: BassAndDrummerIn
-      Value: 1
-    - Name: MelodyIn
-      Value: 0
-  TriggerEvent: 3
---- !u!65 &1882241890
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1882241887}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &1888848706
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1888848707}
-  - component: {fileID: 1888848709}
-  - component: {fileID: 1888848708}
-  m_Layer: 0
-  m_Name: Afueras
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1888848707
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1888848706}
-  m_LocalRotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2.165, y: 0, z: -0.548}
-  m_LocalScale: {x: 0.15890837, y: 1, z: 4.453597}
-  m_Children: []
-  m_Father: {fileID: 1256371649}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1888848708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1888848706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 744a208c85da6d04c861d81b992e4ead, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: Player
-  Emitters:
-  - Target: {fileID: 2114014814}
-    Params:
-    - Name: MelodyIn
-      Value: 1
-    - Name: BassAndDrummerIn
-      Value: 0
-    - Name: ShakerIn
-      Value: 0
-    - Name: OrganIn
-      Value: 0
-    - Name: GuitarIn
-      Value: 0
-  TriggerEvent: 3
---- !u!65 &1888848709
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1888848706}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1909947158
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15696,78 +15018,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2061671764}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2064061144
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2064061145}
-  - component: {fileID: 2064061147}
-  - component: {fileID: 2064061146}
-  m_Layer: 0
-  m_Name: JardinesBack (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2064061145
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2064061144}
-  m_LocalRotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2.16, y: 0, z: 0.307}
-  m_LocalScale: {x: 0.05480723, y: 1, z: 3.0769274}
-  m_Children: []
-  m_Father: {fileID: 1256371649}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2064061146
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2064061144}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 744a208c85da6d04c861d81b992e4ead, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: Player
-  Emitters:
-  - Target: {fileID: 2114014814}
-    Params:
-    - Name: ShakerIn
-      Value: 0
-    - Name: OrganIn
-      Value: 0
-    - Name: GuitarIn
-      Value: 1
-    - Name: BassAndDrummerIn
-      Value: 1
-    - Name: MelodyIn
-      Value: 0
-  TriggerEvent: 3
---- !u!65 &2064061147
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2064061144}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2064866721
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16911,6 +16161,165 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1001 &3219705847710163090
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3219705846751663442, guid: df8aa00d15ac3754e9904a8432976b28,
+        type: 3}
+      propertyPath: m_Name
+      value: FMOD Music Triggers
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219705846751663443, guid: df8aa00d15ac3754e9904a8432976b28,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219705846751663443, guid: df8aa00d15ac3754e9904a8432976b28,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219705846751663443, guid: df8aa00d15ac3754e9904a8432976b28,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 45.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219705846751663443, guid: df8aa00d15ac3754e9904a8432976b28,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219705846751663443, guid: df8aa00d15ac3754e9904a8432976b28,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219705846751663443, guid: df8aa00d15ac3754e9904a8432976b28,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219705846751663443, guid: df8aa00d15ac3754e9904a8432976b28,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219705846751663443, guid: df8aa00d15ac3754e9904a8432976b28,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219705846751663443, guid: df8aa00d15ac3754e9904a8432976b28,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219705846751663443, guid: df8aa00d15ac3754e9904a8432976b28,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219705846751663443, guid: df8aa00d15ac3754e9904a8432976b28,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219705846855209478, guid: df8aa00d15ac3754e9904a8432976b28,
+        type: 3}
+      propertyPath: Emitters.Array.data[0].Target
+      value: 
+      objectReference: {fileID: 2114014814}
+    - target: {fileID: 3219705846377655254, guid: df8aa00d15ac3754e9904a8432976b28,
+        type: 3}
+      propertyPath: Emitters.Array.data[0].Target
+      value: 
+      objectReference: {fileID: 2114014814}
+    - target: {fileID: 3219705848117152483, guid: df8aa00d15ac3754e9904a8432976b28,
+        type: 3}
+      propertyPath: Emitters.Array.data[0].Target
+      value: 
+      objectReference: {fileID: 2114014814}
+    - target: {fileID: 3219705847711395366, guid: df8aa00d15ac3754e9904a8432976b28,
+        type: 3}
+      propertyPath: Emitters.Array.data[0].Target
+      value: 
+      objectReference: {fileID: 2114014814}
+    - target: {fileID: 3219705847859281909, guid: df8aa00d15ac3754e9904a8432976b28,
+        type: 3}
+      propertyPath: Emitters.Array.data[0].Target
+      value: 
+      objectReference: {fileID: 2114014814}
+    - target: {fileID: 3219705847058218349, guid: df8aa00d15ac3754e9904a8432976b28,
+        type: 3}
+      propertyPath: Emitters.Array.data[0].Target
+      value: 
+      objectReference: {fileID: 2114014814}
+    - target: {fileID: 3219705848138840253, guid: df8aa00d15ac3754e9904a8432976b28,
+        type: 3}
+      propertyPath: Emitters.Array.data[0].Target
+      value: 
+      objectReference: {fileID: 2114014814}
+    - target: {fileID: 3219705846371163123, guid: df8aa00d15ac3754e9904a8432976b28,
+        type: 3}
+      propertyPath: Emitters.Array.data[0].Target
+      value: 
+      objectReference: {fileID: 2114014814}
+    - target: {fileID: 3219705846485496392, guid: df8aa00d15ac3754e9904a8432976b28,
+        type: 3}
+      propertyPath: Emitters.Array.data[0].Target
+      value: 
+      objectReference: {fileID: 2114014814}
+    - target: {fileID: 3219705847239071166, guid: df8aa00d15ac3754e9904a8432976b28,
+        type: 3}
+      propertyPath: Emitters.Array.data[0].Params.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219705847239071166, guid: df8aa00d15ac3754e9904a8432976b28,
+        type: 3}
+      propertyPath: Emitters.Array.data[0].Target
+      value: 
+      objectReference: {fileID: 2114014814}
+    - target: {fileID: 3219705847239071166, guid: df8aa00d15ac3754e9904a8432976b28,
+        type: 3}
+      propertyPath: Emitters.Array.data[0].Params.Array.data[0].Name
+      value: BassAndDrummerIn
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219705847239071166, guid: df8aa00d15ac3754e9904a8432976b28,
+        type: 3}
+      propertyPath: Emitters.Array.data[0].Params.Array.data[0].Value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219705847239071166, guid: df8aa00d15ac3754e9904a8432976b28,
+        type: 3}
+      propertyPath: Emitters.Array.data[0].Params.Array.data[1].Name
+      value: ShakerIn
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219705847239071166, guid: df8aa00d15ac3754e9904a8432976b28,
+        type: 3}
+      propertyPath: Emitters.Array.data[0].Params.Array.data[2].Name
+      value: OrganIn
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219705847239071166, guid: df8aa00d15ac3754e9904a8432976b28,
+        type: 3}
+      propertyPath: Emitters.Array.data[0].Params.Array.data[3].Name
+      value: GuitarIn
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219705847239071166, guid: df8aa00d15ac3754e9904a8432976b28,
+        type: 3}
+      propertyPath: Emitters.Array.data[0].Params.Array.data[3].Value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219705847239071166, guid: df8aa00d15ac3754e9904a8432976b28,
+        type: 3}
+      propertyPath: Emitters.Array.data[0].Params.Array.data[4].Name
+      value: MelodyIn
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: df8aa00d15ac3754e9904a8432976b28, type: 3}
 --- !u!1001 &3404388612507438443
 PrefabInstance:
   m_ObjectHideFlags: 0

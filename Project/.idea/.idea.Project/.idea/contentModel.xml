@@ -24,12 +24,57 @@
             <e p="PlayerRaycast.cs" t="Include" />
           </e>
         </e>
+        <e p="BOXOPHOBIC" t="Include">
+          <e p="Skybox Cubemap Extended" t="Include">
+            <e p="Core" t="Include">
+              <e p="Shaders" t="Include">
+                <e p="Skybox Cubemap Extended.shader" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Utils" t="Include">
+            <e p="CGIncludes" t="Include">
+              <e p="VS_indirect.cginc" t="Include" />
+            </e>
+            <e p="Editor" t="Include">
+              <e p="BConst.cs" t="Include" />
+              <e p="BEditorGUI.cs" t="Include" />
+              <e p="BEditorUtils.cs" t="Include" />
+              <e p="BVersion.cs" t="Include" />
+            </e>
+            <e p="PropertyDrawers" t="Include">
+              <e p="BCategoryAttribute.cs" t="Include" />
+              <e p="BInteractiveAttribute.cs" t="Include" />
+              <e p="BMessageAttribute.cs" t="Include" />
+              <e p="BRangeOptionsAttribute.cs" t="Include" />
+              <e p="BRangeSimpleAttribute.cs" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="BBannerDrawer.cs" t="Include" />
+                <e p="BCategoryAttributeDrawer.cs" t="Include" />
+                <e p="BCategoryDrawer.cs" t="Include" />
+                <e p="BInteractiveAttributeDrawer.cs" t="Include" />
+                <e p="BInteractiveDrawer.cs" t="Include" />
+                <e p="BMessageAttributeDrawer.cs" t="Include" />
+                <e p="BMessageDrawer.cs" t="Include" />
+                <e p="BRangeOptionsAttributeDrawer.cs" t="Include" />
+                <e p="BRangeSimpleAttributeDrawer.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Shaders" t="Include">
+              <e p="SimpleLit Prototype Terrain.shader" t="Include" />
+              <e p="StandardLit Prototype Terrain.shader" t="Include" />
+              <e p="Unlit Prototype Ground.shader" t="Include" />
+              <e p="Unlit Prototype Skybox.shader" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Controls" t="Include">
           <e p="InputMaster.cs" t="Include" />
         </e>
         <e p="Editor" t="Include">
           <e p="FMODStudioFootstepsEditor.cs" t="Include" />
         </e>
+        <e p="GlobalParameter.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="FMOD" t="Include">
             <e p="addons" t="Include">
@@ -100,6 +145,8 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Car.cs" t="Include" />
+          <e p="Door.cs" t="Include" />
           <e p="FMOD" t="Include">
             <e p="FMODStudioFirstPersonFootsteps.cs" t="Include" />
             <e p="FMODStudioMaterialSetter.cs" t="Include" />
@@ -109,6 +156,13 @@
           <e p="QuestSystem" t="Include">
             <e p="InteractableQuest.cs" t="Include" />
             <e p="ParentQuestAndSubquest.cs" t="Include" />
+            <e p="Q0" t="Include">
+              <e p="NeighbourQuest.cs" t="Include" />
+              <e p="RadioQuest.cs" t="Include" />
+            </e>
+            <e p="Q1" t="Include">
+              <e p="DogQuest.cs" t="Include" />
+            </e>
             <e p="Quest.cs" t="Include" />
             <e p="SubQuest.cs" t="Include" />
             <e p="UIGenerator.cs" t="Include" />
