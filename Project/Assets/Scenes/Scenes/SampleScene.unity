@@ -44,7 +44,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 1
+  m_GIWorkflowMode: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -82,7 +82,7 @@ LightmapSettings:
     m_PVRFilteringMode: 2
     m_PVRDenoiserTypeDirect: 0
     m_PVRDenoiserTypeIndirect: 0
-    m_PVRDenoiserTypeAO: 0
+    m_PVRDenoiserTypeAO: 2
     m_PVRFilterTypeDirect: 0
     m_PVRFilterTypeIndirect: 0
     m_PVRFilterTypeAO: 0
@@ -96,7 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
-  m_LightingDataAsset: {fileID: 112000000, guid: 905683758527f5d409584454ef142d6b,
+  m_LightingDataAsset: {fileID: 112000000, guid: c4a3a2304f6d08a41a7ea2b4966dd8ff,
     type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -3056,6 +3056,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5178704630579640132, guid: 2459c616ac1d0a643bd30626b5920ffc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2647819034313033724, guid: 2459c616ac1d0a643bd30626b5920ffc,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2459c616ac1d0a643bd30626b5920ffc, type: 3}
 --- !u!4 &462569356 stripped
@@ -4935,7 +4945,7 @@ Light:
   m_BounceIntensity: 3.47
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 4.5904e-41, y: 0, z: 0, w: 282309630}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -5428,13 +5438,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 761817198}
-  m_LocalRotation: {x: -0, y: -0.38268313, z: -0, w: 0.92387974}
-  m_LocalPosition: {x: -40.832, y: 2.523, z: -27.225}
-  m_LocalScale: {x: 1, y: 3, z: 1}
+  m_LocalRotation: {x: -0, y: 0.3826827, z: -0, w: 0.92387986}
+  m_LocalPosition: {x: -40.832, y: 3.79, z: -27.225}
+  m_LocalScale: {x: 0.20466398, y: 0.20466398, z: 0.20466398}
   m_Children: []
   m_Father: {fileID: 1227452925}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -45.000004, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 45.000004, z: 0}
 --- !u!65 &761817200
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5446,8 +5456,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 5.17012, y: 18.432863, z: 4.318117}
+  m_Center: {x: 0.0021508934, y: -4.5566444, z: 0.061586626}
 --- !u!23 &761817201
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5493,7 +5503,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 761817198}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -8511393170536547539, guid: 4e1fbafb128e67f4b8d1acb14f9227ee, type: 3}
 --- !u!114 &761817203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5524,8 +5534,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.8
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 10.78
+  m_Center: {x: 0.0021508934, y: -4.5566444, z: 0.061586626}
 --- !u!95 &761817205
 Animator:
   serializedVersion: 3
@@ -10236,6 +10246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiController: {fileID: 359989955}
+  audioManager: {fileID: 1569388308}
   player: {fileID: 2114014811}
   quests:
   - id: 0
@@ -11432,6 +11443,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1569388308 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7513720749984858269, guid: 8bc6925d6b6381f42861eff197373bc2,
+    type: 3}
+  m_PrefabInstance: {fileID: 7513720749785480180}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db24ccbb97a2bb4fbf5d8719efec811, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1575465810
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12320,7 +12343,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: 168d3f7eb653b5d4b96cbabeccd35f2d, type: 2}
+  sharedProfile: {fileID: 11400000, guid: f00fbba3433b5414b83c2c51ff5686a7, type: 2}
 --- !u!4 &1676149549
 Transform:
   m_ObjectHideFlags: 0
@@ -17285,6 +17308,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7513720749984858269, guid: 8bc6925d6b6381f42861eff197373bc2,
+        type: 3}
+      propertyPath: sounds.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7513720749984858269, guid: 8bc6925d6b6381f42861eff197373bc2,
+        type: 3}
+      propertyPath: sounds.Array.data[0].name
+      value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: 7513720749984858269, guid: 8bc6925d6b6381f42861eff197373bc2,
+        type: 3}
+      propertyPath: sounds.Array.data[0].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7513720749984858269, guid: 8bc6925d6b6381f42861eff197373bc2,
+        type: 3}
+      propertyPath: sounds.Array.data[0].is3D
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7513720749984858269, guid: 8bc6925d6b6381f42861eff197373bc2,
+        type: 3}
+      propertyPath: sounds.Array.data[0].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7513720749984858269, guid: 8bc6925d6b6381f42861eff197373bc2,
+        type: 3}
+      propertyPath: sounds.Array.data[0].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 293a82394fa397846bc92b00dc0c650f, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bc6925d6b6381f42861eff197373bc2, type: 3}
 --- !u!23 &7718390322495637943

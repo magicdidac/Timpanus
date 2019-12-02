@@ -14,6 +14,8 @@ public class Car : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         initialPoint = transform.position;
+
+        GameController.instance.audioManager.PlayAtPosition("Car", transform);
     }
 
     private void FixedUpdate()

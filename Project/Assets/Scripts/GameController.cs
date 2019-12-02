@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour
     [HideInInspector] public static GameController instance;
 
     [SerializeField] private UIController uiController = null;
+    [SerializeField] public AudioManager audioManager = null;
     [SerializeField] private PlayerController player;
     [Space]
     [SerializeField] public List<Quest> quests = new List<Quest>();
