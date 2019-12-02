@@ -13,28 +13,22 @@ public class SubQuest
     [HideInInspector] public bool isDone { get; private set; }
 
     [SerializeField] public string title;
-    [FMODUnity.EventRef]
-    [SerializeField] private FMOD.Studio.EventInstance achivement; 
+    private FMOD.Studio.EventInstance instance;
+    [FMODUnity.EventRef] public string fmodEvent;
 
     public void Initialize(int parentQuestId)
     {
         this.parentQuestId = parentQuestId;
         this.isDone = false;
+        instance = FMODUnity.RuntimeManager.CreateInstance(fmodEvent);
+        instance.start();
     }
 
     public void Done()
     {
         this.isDone = true;
+        GlobalParameter.AddAchievement();
 
-        float last;
-
-        //achivement.getParameterByName("Achievement", out last);
-        Debug.Log(FMODUnity.RuntimeManager.StudioSystem.getParameterByName("Achievement", out last));
-        Debug.Log(last);
-        Debug.Log(FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Achievement", Mathf.Clamp(last + .2f, 0, 1)));
-        //achivement.setParameterByName("Achievement", Mathf.Clamp(last + .2f, 0, 1));
-        
-        Debug.Log(last);
 
     }
 

@@ -4968,7 +4968,7 @@ Light:
   m_BounceIntensity: 3.47
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 4.5904e-41, y: 0, z: 0, w: 282309630}
+  m_BoundingSphereOverride: {x: 6.4, y: 1.3e-44, z: 0, w: 1.25}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -10235,6 +10235,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1426859150}
   - component: {fileID: 1426859151}
+  - component: {fileID: 1426859152}
   m_Layer: 0
   m_Name: GameController
   m_TagString: GameController
@@ -10277,19 +10278,48 @@ MonoBehaviour:
     subQuests:
     - id: 0
       title: Find the furious neighbor
+      fmodEvent: event:/MainTheme
     - id: 1
       title: Turn off the radio
+      fmodEvent: event:/MainTheme
     - id: 2
       title: Tell your neighbor, your great feat
+      fmodEvent: event:/MainTheme
   - id: 1
     title: The Dog
     subQuests:
     - id: 0
       title: What happens to the dog?
+      fmodEvent: event:/MainTheme
     - id: 1
       title: Find the dog toy
+      fmodEvent: event:/MainTheme
     - id: 2
       title: Give the toy to the dog
+      fmodEvent: event:/MainTheme
+--- !u!114 &1426859152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426859149}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/MainTheme
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 8.4
 --- !u!1001 &1432895420
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15672,6 +15702,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b3e01e63cbb86a40b316589d1d58e22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2114014814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114014808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f5630667f5630446a4bddfea8954c75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fmodEvent: event:/MainTheme
+--- !u!114 &2114014815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114014808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/MainTheme
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 8.4
 --- !u!1001 &2117799457
 PrefabInstance:
   m_ObjectHideFlags: 0

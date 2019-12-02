@@ -74,6 +74,7 @@
         <e p="Editor" t="Include">
           <e p="FMODStudioFootstepsEditor.cs" t="Include" />
         </e>
+        <e p="GlobalParameter.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="FMOD" t="Include">
             <e p="addons" t="Include">
@@ -154,8 +155,14 @@
           <e p="Interactable.cs" t="Include" />
           <e p="QuestSystem" t="Include">
             <e p="InteractableQuest.cs" t="Include" />
-            <e p="NeighbourQuest.cs" t="Include" />
             <e p="ParentQuestAndSubquest.cs" t="Include" />
+            <e p="Q0" t="Include">
+              <e p="NeighbourQuest.cs" t="Include" />
+              <e p="RadioQuest.cs" t="Include" />
+            </e>
+            <e p="Q1" t="Include">
+              <e p="DogQuest.cs" t="Include" />
+            </e>
             <e p="Quest.cs" t="Include" />
             <e p="SubQuest.cs" t="Include" />
             <e p="UIGenerator.cs" t="Include" />
