@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{faee1314-3e77-4aa4-a775-1bd2a2575530}">
+		<property name="name">
+			<value>MelodyIn</value>
+		</property>
+		<relationship name="folder">
+			<destination>{12f7a8b0-d149-45d1-b16c-589734e05e7b}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{879eac69-7d0d-4abf-93bf-827e81ce9aaa}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{879eac69-7d0d-4abf-93bf-827e81ce9aaa}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.15000000596046448</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>

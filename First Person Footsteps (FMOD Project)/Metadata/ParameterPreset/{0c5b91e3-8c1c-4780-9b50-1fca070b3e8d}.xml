@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{0c5b91e3-8c1c-4780-9b50-1fca070b3e8d}">
+		<property name="name">
+			<value>ShakerIn</value>
+		</property>
+		<relationship name="folder">
+			<destination>{12f7a8b0-d149-45d1-b16c-589734e05e7b}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{af99485d-3217-4935-b537-3397dcfdc26d}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{af99485d-3217-4935-b537-3397dcfdc26d}">
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.10000000894069672</value>
+		</property>
+	</object>
+</objects>
