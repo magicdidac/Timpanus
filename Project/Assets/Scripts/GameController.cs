@@ -19,6 +19,8 @@ public class GameController : MonoBehaviour
 
     private void Awake()
     {
+
+        Time.timeScale = 1;
         if (instance != null)
         {
             Destroy(gameObject);
@@ -136,7 +138,7 @@ public class GameController : MonoBehaviour
     public void RestartScene()
     {
         Time.timeScale = 1;
-        SceneManager.LoadSceneAsync(0);
+        SceneManager.LoadSceneAsync(1);
     }
 
 }
