@@ -82,4 +82,23 @@ public class GameController : MonoBehaviour
         return null;
     }
 
+
+    public bool isQuestDone(int id)
+    {
+        Quest q = GetQuest(id);
+
+        return q.isDone;
+
+    }
+
+    public bool isSubQuestDone(int quest, int subquest)
+    {
+        Quest q = GetQuest(quest);
+
+        SubQuest s = q.GetSubquest(subquest);
+
+        return s.isDone;
+
+    }
+
 }

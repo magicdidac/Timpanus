@@ -39,7 +39,9 @@ public class Quest
     }
 
 
-    private SubQuest GetSubquest(int id)
+
+
+    public SubQuest GetSubquest(int id)
     {
         foreach (SubQuest s in subQuests)
         {

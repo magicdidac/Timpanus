@@ -31,7 +31,7 @@ public class UIGenerator : MonoBehaviour
             RectTransform rectQuest = Instantiate(questPrefab, transform.position, Quaternion.identity).GetComponent<RectTransform>();
             rectQuest.SetParent(transform);
             rectQuest.anchoredPosition = new Vector2(0, -1 * (135 + (i * 135) + (lastSubQuestCount * 135)));
-            rectQuest.GetComponent<UINoteLine>().quest = q;
+            //rectQuest.GetComponent<UINoteLine>().quest = q;
             lastSubQuestCount = q.subQuests.Count;
 
             for(int j = 0; j < lastSubQuestCount; j++)
@@ -41,7 +41,7 @@ public class UIGenerator : MonoBehaviour
                 RectTransform rectSubQuest = Instantiate(subQuestPrefab, transform.position, Quaternion.identity).GetComponent<RectTransform>();
                 rectSubQuest.SetParent(rectQuest);
                 rectSubQuest.anchoredPosition = new Vector2(0, -1 * (202.5f + (j * 135)));
-                rectSubQuest.GetComponent<UINoteLine>().subQuest = subQ;
+                //rectSubQuest.GetComponent<UINoteLine>().subQuest = subQ;
             }
 
         }
