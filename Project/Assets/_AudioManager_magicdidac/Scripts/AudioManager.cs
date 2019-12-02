@@ -167,6 +167,8 @@ public class AudioManager : MonoBehaviour
 
         source.volume = s.volume;
         source.loop = s.loop;
+
+        source.dopplerLevel = (s.useDoppler) ? 5 : 0;
     }
 
 }

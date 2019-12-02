@@ -13,6 +13,7 @@ public class Sound
     [SerializeField] public float volume = 1f;
     [SerializeField] public bool is3D = false;
     [SerializeField] public bool loop = false;
+    [SerializeField] public bool useDoppler = false;
 
     [HideInInspector] public AudioSource source = null;
 

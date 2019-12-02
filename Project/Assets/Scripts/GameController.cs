@@ -34,6 +34,18 @@ public class GameController : MonoBehaviour
 
     }
 
+    private void Update()
+    {
+        foreach(Quest q in quests)
+        {
+            if (!q.isDone)
+                return;
+        }
+
+        Win();
+
+    }
+
     public void SubquestDone(int questId, int subquestId)
     {
         foreach (Quest q in quests)
@@ -108,6 +120,14 @@ public class GameController : MonoBehaviour
     public void Die()
     {
         uiController.Die();
+        player.Die();
+        Cursor.lockState = CursorLockMode.None;
+        Time.timeScale = 0;
+    }
+
+    private void Win()
+    {
+        uiController.Win();
         player.Die();
         Cursor.lockState = CursorLockMode.None;
         Time.timeScale = 0;

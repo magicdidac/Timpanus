@@ -14,6 +14,7 @@ public class UIController : MonoBehaviour
     [SerializeField] private GameObject tip = null;
     [SerializeField] private GameObject notes = null;
     [SerializeField] private GameObject deathMenu = null;
+    [SerializeField] private GameObject winMenu = null;
 
     private void Start()
     {
@@ -26,6 +27,7 @@ public class UIController : MonoBehaviour
         tip.SetActive(true);
         notes.SetActive(true);
         deathMenu.SetActive(false);
+        winMenu.SetActive(false);
 
     }
 
@@ -45,7 +47,16 @@ public class UIController : MonoBehaviour
     {
         tip.SetActive(false);
         notes.SetActive(false);
+        winMenu.SetActive(false);
         deathMenu.SetActive(true);
+    }
+
+    public void Win()
+    {
+        tip.SetActive(false);
+        notes.SetActive(false);
+        deathMenu.SetActive(false);
+        winMenu.SetActive(true);
     }
 
 }

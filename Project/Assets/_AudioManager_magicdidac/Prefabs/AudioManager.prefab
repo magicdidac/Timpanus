@@ -45,5 +45,54 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSpotPrefab: {fileID: 5258295828466764363, guid: 14f313c7af545dd4aa775c2412b16662,
     type: 3}
-  sounds: []
+  sounds:
+  - name: Car
+    clip: {fileID: 8300000, guid: 293a82394fa397846bc92b00dc0c650f, type: 3}
+    volume: 1
+    is3D: 1
+    loop: 1
+    useDoppler: 1
+    source: {fileID: 0}
+  - name: Neighbour-Angry
+    clip: {fileID: 8300000, guid: f531056cfeb9e3d4586796e997ca3715, type: 3}
+    volume: 0.5
+    is3D: 1
+    loop: 1
+    useDoppler: 0
+    source: {fileID: 0}
+  - name: Neighbour-Soft
+    clip: {fileID: 8300000, guid: 300eeacbab247464daf28cf7ff8d6de2, type: 3}
+    volume: 0.3
+    is3D: 1
+    loop: 0
+    useDoppler: 0
+    source: {fileID: 0}
+  - name: Dog-Barking
+    clip: {fileID: 8300000, guid: 97669ef64509f6c4e9b76d81881ca254, type: 3}
+    volume: 0.3
+    is3D: 1
+    loop: 1
+    useDoppler: 0
+    source: {fileID: 0}
+  - name: Dog-Soft
+    clip: {fileID: 8300000, guid: 2b250340a304fd14d80668744d2fbb49, type: 3}
+    volume: 0.3
+    is3D: 1
+    loop: 1
+    useDoppler: 0
+    source: {fileID: 0}
+  - name: Radio-Song
+    clip: {fileID: 8300000, guid: 07a853ef8da15da419c90a8a49cade53, type: 3}
+    volume: 0.3
+    is3D: 1
+    loop: 1
+    useDoppler: 0
+    source: {fileID: 0}
+  - name: DogToy
+    clip: {fileID: 8300000, guid: 07a853ef8da15da419c90a8a49cade53, type: 3}
+    volume: 1
+    is3D: 0
+    loop: 0
+    useDoppler: 0
+    source: {fileID: 0}
   soundCollections: []
