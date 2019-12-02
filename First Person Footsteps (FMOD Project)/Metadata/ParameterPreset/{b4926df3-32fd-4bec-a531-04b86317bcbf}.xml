@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{b4926df3-32fd-4bec-a531-04b86317bcbf}">
+		<property name="name">
+			<value>GuitarIn</value>
+		</property>
+		<relationship name="folder">
+			<destination>{12f7a8b0-d149-45d1-b16c-589734e05e7b}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{9cfb1daa-71d9-4bad-9f3e-8b47a5493218}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{9cfb1daa-71d9-4bad-9f3e-8b47a5493218}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.050000004470348358</value>
+		</property>
+	</object>
+</objects>
