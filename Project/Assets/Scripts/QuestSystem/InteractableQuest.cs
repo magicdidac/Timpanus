@@ -5,16 +5,22 @@ using UnityEngine;
 public class InteractableQuest : Interactable
 {
     [SerializeField] public List<ParentQuestAndSubquest> myQuests = new List<ParentQuestAndSubquest>();
+    [HideInInspector] private Animator anim;
     [HideInInspector] private GameController gc;
 
     private void Start()
     {
         gc = GameController.instance;
+        anim = GetComponent<Animator>();
+
     }
 
 
     public override void Interact()
     {
+        if (!anim.GetBool("isVisible"))
+            return;
+
 
         foreach(ParentQuestAndSubquest p in myQuests)
         {
@@ -31,4 +37,23 @@ public class InteractableQuest : Interactable
             }
         }
     }
+
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.GetComponent<PlayerController>())
+        {
+            anim.SetBool("isVisible", true);
+        }else
+            anim.SetBool("isVisible", false);
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.GetComponent<PlayerController>())
+        {
+            anim.SetBool("isVisible", false);
+        }
+    }
+
 }

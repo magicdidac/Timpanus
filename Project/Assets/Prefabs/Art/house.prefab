@@ -56,7 +56,8 @@ GameObject:
   - component: {fileID: 543263147264255914}
   - component: {fileID: 7943232446737829038}
   - component: {fileID: 300709343267861603}
-  m_Layer: 0
+  - component: {fileID: 4394109342094773923}
+  m_Layer: 8
   m_Name: doorFrame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,6 +138,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.9398555, y: 4.5555654, z: 0.10331919}
   m_Center: {x: 0.0024874813, y: 3.2794015, z: 6.424799}
+--- !u!114 &4394109342094773923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561466831260761579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 450db94fe262a134abc258c18ce98fc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 264763225}
 --- !u!1 &836012739070892319
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,6 +564,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2120416433408154497}
+  - component: {fileID: 264763225}
   m_Layer: 0
   m_Name: house
   m_TagString: Untagged
@@ -585,6 +600,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!95 &264763225
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3113784339358771602}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f0b608daadb253649bb972802b851592, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3442360619669594983
 GameObject:
   m_ObjectHideFlags: 0
