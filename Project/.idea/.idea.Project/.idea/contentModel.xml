@@ -153,6 +153,7 @@
           </e>
           <e p="GameController.cs" t="Include" />
           <e p="Interactable.cs" t="Include" />
+          <e p="Phone.cs" t="Include" />
           <e p="QuestSystem" t="Include">
             <e p="InteractableQuest.cs" t="Include" />
             <e p="ParentQuestAndSubquest.cs" t="Include" />
@@ -162,6 +163,7 @@
             </e>
             <e p="Q1" t="Include">
               <e p="DogQuest.cs" t="Include" />
+              <e p="DogToyQuest.cs" t="Include" />
             </e>
             <e p="Quest.cs" t="Include" />
             <e p="SubQuest.cs" t="Include" />
