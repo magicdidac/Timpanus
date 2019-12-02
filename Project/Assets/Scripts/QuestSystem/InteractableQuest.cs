@@ -5,16 +5,22 @@ using UnityEngine;
 public class InteractableQuest : Interactable
 {
     [SerializeField] public List<ParentQuestAndSubquest> myQuests = new List<ParentQuestAndSubquest>();
-    [HideInInspector] private Animator anim;
-    [HideInInspector] private GameController gc;
+    [HideInInspector] protected Animator anim;
+    [HideInInspector] protected GameController gc;
 
-    private void Start()
+    protected virtual void Start()
     {
         gc = GameController.instance;
         anim = GetComponent<Animator>();
 
     }
 
+
+    private void Update()
+    {
+        if (gc.isSubQuestDone(myQuests[myQuests.Count - 1].parent, myQuests[myQuests.Count - 1].self))
+            anim.SetBool("isVisible", true);
+    }
 
     public override void Interact()
     {
