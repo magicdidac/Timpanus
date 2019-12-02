@@ -13,6 +13,7 @@ public class SubQuest
     [HideInInspector] public bool isDone { get; private set; }
 
     [SerializeField] public string title;
+    [SerializeField] private FMOD.Studio.EventInstance achivement; 
 
     public void Initialize(int parentQuestId)
     {
@@ -23,6 +24,12 @@ public class SubQuest
     public void Done()
     {
         this.isDone = true;
+
+        float last;
+
+        achivement.getParameterByName("Achievement", out last);
+
+        achivement.setParameterByName("Achievement", Mathf.Clamp(last + .2f, 0, 1));
     }
 
     public override string ToString()
